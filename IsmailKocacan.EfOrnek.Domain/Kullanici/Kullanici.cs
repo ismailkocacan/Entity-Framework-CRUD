@@ -20,5 +20,11 @@ namespace IsmailKocacan.EfOrnek.Domain
 
         [StringLength(50)]
         public string EMailAdres { get; set; }
+
+
+        public static Kullanici create()
+        {
+            return new Kullanici();
+        }
     }
 }

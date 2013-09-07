@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IsmailKocacan.EfOrnek.Domain;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -8,6 +9,9 @@ namespace IsmailKocacan.EfOrnek.Data.DatabaseContext
 {
     public class MyDbContext : DbContext
     {
+
+        public DbSet<Kullanici> kullanici { get; set; }
+
 
         public MyDbContext()
         {

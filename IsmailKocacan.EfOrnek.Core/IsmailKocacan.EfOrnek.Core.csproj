@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A4C040CD-66DE-4197-B4B3-D33C8BB13503}</ProjectGuid>
+    <ProjectGuid>{A83801BC-352E-4195-9220-3D48D47E04A7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IsmailKocacan.EfOrnek.Data</RootNamespace>
-    <AssemblyName>IsmailKocacan.EfOrnek.Data</AssemblyName>
+    <RootNamespace>IsmailKocacan.EfOrnek.Core</RootNamespace>
+    <AssemblyName>IsmailKocacan.EfOrnek.Core</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,17 +30,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\EntityFramework.dll</HintPath>
+    <Reference Include="EntityFramework">
+      <HintPath>..\IsmailKocacan.EfOrnek.Data\bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="IsmailKocacan.EfOrnek.Data">
+      <HintPath>..\IsmailKocacan.EfOrnek.Data\bin\Debug\IsmailKocacan.EfOrnek.Data.dll</HintPath>
     </Reference>
     <Reference Include="IsmailKocacan.EfOrnek.Domain">
       <HintPath>..\IsmailKocacan.EfOrnek.Domain\bin\Debug\IsmailKocacan.EfOrnek.Domain.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Entity.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,13 +50,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DatabaseContext\MyDbContext.cs" />
+    <Compile Include="KullaniciManager\KullaniciManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
