@@ -3,9 +3,16 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace IsmailKocacan.EfOrnek.Domain
 {
+    public interface IKullanici
+    {
+        int Id { get; set; }
+        string Ad { get; set; }
+        string Soyad { get; set; }
+        string EMailAdres { get; set; }
+    }
 
     [Table("Kullanici")]
-    public class Kullanici
+    public class Kullanici : IKullanici
     {
         [Key]
         public int Id { get; set; }

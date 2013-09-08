@@ -37,6 +37,9 @@
     <Reference Include="IsmailKocacan.EfOrnek.Domain">
       <HintPath>..\IsmailKocacan.EfOrnek.Domain\bin\Debug\IsmailKocacan.EfOrnek.Domain.dll</HintPath>
     </Reference>
+    <Reference Include="IsmailKocacan.EfOrnek.Domain">
+      <HintPath>..\IsmailKocacan.EfOrnek.Domain\bin\Debug\IsmailKocacan.EfOrnek.Domain.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
