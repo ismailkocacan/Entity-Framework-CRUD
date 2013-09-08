@@ -82,6 +82,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\buttons.css" />
+    <Content Include="css\textbox.css" />
     <Content Include="KullaniciView\Kullanici.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
