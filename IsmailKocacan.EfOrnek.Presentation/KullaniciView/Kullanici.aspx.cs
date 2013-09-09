@@ -95,6 +95,14 @@ namespace IsmailKocacan.EfOrnek.Presentation.KullaniciView
             this.kullaniciListele();
         }
 
+        protected void btnYeni_Click(object sender, EventArgs e)
+        {
+            txtAdi.Text = string.Empty;
+            txtSoyadi.Text = string.Empty;
+            txtMail.Text = string.Empty;
+            txtAdi.Focus();
+        }
+
     
     }
 }

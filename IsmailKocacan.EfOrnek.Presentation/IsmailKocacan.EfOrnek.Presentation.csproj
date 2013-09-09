@@ -83,6 +83,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\buttons.css" />
+    <Content Include="css\githup\gh-buttons.css" />
+    <Content Include="css\githup\gh-icons.png" />
+    <Content Include="css\githup\LICENSE.txt" />
     <Content Include="css\textbox.css" />
     <Content Include="KullaniciView\Kullanici.aspx" />
     <Content Include="Web.config" />

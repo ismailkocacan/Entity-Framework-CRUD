@@ -7,6 +7,7 @@
     <title>Entity Framework CRUD Demo</title>
     <link href="../css/buttons.css" rel="stylesheet" />
     <link href="../css/textbox.css" rel="stylesheet" />
+    <link href="../css/githup/gh-buttons.css" rel="stylesheet" />
 
     <style type="text/css">
         body {
@@ -18,7 +19,7 @@
         table {
             background-color:whitesmoke;
             padding:5px;
-            border:dotted 1px white;
+            border:solid 1px #E4E4E4;
         }
     </style>
 </head>
@@ -49,9 +50,11 @@
             </tr>
 
             <tr>
-                <td colspan="3" align="center">
+                <td colspan="3" align="right">
 
-                    <asp:Button CssClass="button blue" ID="btnSave" runat="server" Text="Kaydet" OnClick="btnSave_Click" />
+                    <asp:Button CssClass="button big" ID="btnYeni" runat="server" OnClick="btnYeni_Click" Text="Yeni" />
+
+                    <asp:Button CssClass="button big" ID="btnSave" runat="server" Text="Kaydet" OnClick="btnSave_Click" />
 
                 </td>
             </tr>
@@ -61,10 +64,10 @@
       
         <asp:DataList ID="dListKullanici" BackColor="WhiteSmoke" BorderStyle="Dotted" BorderWidth="1" BorderColor="Silver" runat="server" Width="100%" OnItemCommand="dListKullanici_ItemCommand">
             <HeaderTemplate>
-                <asp:Button CssClass="button blue medium" ID="btnListele" runat="server" Text="Listele" OnClick="btnListele_Click" />
+                <asp:Button CssClass="button big" ID="btnListele" runat="server" Text="Listele" OnClick="btnListele_Click" />
             </HeaderTemplate>
             <ItemTemplate>
-                <asp:Button CssClass="button red medium" runat="server" CommandName="DELETE" ID="btnDelete" Text='Sil'></asp:Button>
+                <asp:Button CssClass="button danger" runat="server" CommandName="DELETE" ID="btnDelete" Text='Sil'></asp:Button>
 
                 <asp:Button CssClass="button blue medium" runat="server" CommandName="EDIT" ID="btnEdit" Text='Düzenle'></asp:Button>
 
@@ -77,7 +80,7 @@
 
                 <asp:Label runat="server" ID="lblEMailAdres" Text='<%# Eval("EMailAdres") %>' Visible="true"></asp:Label>
 
-
+                <br />
             </ItemTemplate>
             <SeparatorTemplate>
                 <hr style="border: solid 1px #eeeeee;" />

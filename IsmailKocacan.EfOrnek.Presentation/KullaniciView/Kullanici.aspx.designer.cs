@@ -49,6 +49,15 @@ namespace IsmailKocacan.EfOrnek.Presentation.KullaniciView {
         protected global::System.Web.UI.WebControls.TextBox txtMail;
         
         /// <summary>
+        /// btnYeni control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnYeni;
+        
+        /// <summary>
         /// btnSave control.
         /// </summary>
         /// <remarks>
